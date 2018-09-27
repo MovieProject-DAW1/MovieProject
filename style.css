@@ -126,3 +126,66 @@ div {
     padding: 20px;
     border-top: 2px solid #999999;
 }
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 480px) {
+    #main_aside {
+        display: none;
+    }
+
+    #main_header {
+        width: 90%;
+        height: auto;
+    }
+
+    #main_header img {
+        float: left;
+        width: 60%;
+        height: auto;
+
+    }
+
+    #main_menu {
+        width: 90%;
+        height: auto;
+    }
+
+    #main_menu li {
+        font-size: 4vw;
+    }
+
+    #main_section {
+        margin: 0;
+        width: 80%;
+    }
+
+    #main_section article {
+        width: 100%;
+        height: auto;
+        padding-top: 5px;
+    }
+
+    #main_section article img {
+        width: 60%;
+        height: auto;
+        max-height: 220px;
+        box-shadow: 2px 2px 5px #999;
+        margin: 5px;
+    }
+
+    #main_section h3 {
+        width: 100%;
+        height: auto;
+        font-size: 4vw;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+
+}
