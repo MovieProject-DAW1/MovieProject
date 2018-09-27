@@ -1,36 +1,63 @@
 <!DOCTYPE>
-<html>
+<html lang="en">
 <head>
-    <title> Movie Project </title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="portada.css">
-    <meta charset="UTF-8">
+    <meta name="description" content="Proyecto web peliculas">
+    <meta name="keywords" content="peliculas, estrenos, sinopsis, trailer">
 </head>
+
 <body>
-<header>
-    <div class = "logo"></div>
-    <div class="tittle"></div>
-    <div class="search"></div>
-</header>
-<nav>
-    <div>Inicio</div>
-    <div>
-        <h4>Genero</h4>
-        <div>Comedia</div>
-        <div>Acción</div>
-        <div>Drama</div>
-    </div>
-</nav>
+<div id="wrapper">
+    <header id="main_header">
+        <a href="\MovieProject\index.html" target="_blank"> <img
+                src="http://localhost:63342/MovieProject/logo1.png"></a>
 
-<section>
-    <div class="foto-cover-page">foto</div>
-    <div class="title-cover-page">Titulo</div>
-    <div class="description-cover-page">Descripción</div>
-    <div class="video-cover-page">video</div>
-</section>
+        <nav id="main_menu">
+            <ul>
+                <li><a href="\MovieProject\index.html">Home</a></li>
+                <li>Estrenos</li>
+                <li>Mas vistas</li>
+                <li>Mejores valoradas</li>
+            </ul>
+        </nav>
+    </header>
 
-<footer>
-    Pie de página
-</footer>
+    <aside id="main_aside">
+        <blockquote>Quotation from article number one</blockquote>
+        <blockquote>Quotation from article number two</blockquote>
+    </aside>
 
+    <section id="main_section">
+
+        <article>
+            <header>
+
+                <h1>Deadpool 2</h1>
+
+            </header>
+            <figure>
+                <img src="https://media.services.cinergy.ch/media/box1600/ca93e72443de5c0a69c1c45fafabef2a56d57aca.jpg">
+                <figcaption>
+                    Foul-mouthed mutant mercenary Wade Wilson (AKA. Deadpool), brings together a team of fellow mutant
+                    rogues to protect a young boy with supernatural abilities from the brutal, time-traveling cyborg,
+                    Cable.
+                    Director: David Leitch
+                    Writers: Rhett Reese, Paul Wernick | 1 more credit »
+                    Stars: Ryan Reynolds, Josh Brolin, Morena Baccarin
+                </figcaption>
+            </figure>
+
+        </article>
+
+
+    </section>
+
+
+    <footer id="main_footer">
+        Copyright &copy; 2014
+    </footer>
+</div>
 </body>
+
 </html>

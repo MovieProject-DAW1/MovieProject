@@ -10,6 +10,11 @@ h2 {
     font: bold 14px verdana, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 header, section, footer, aside, nav, article, figure, figcaption, hgroup{
     display: block;
 }
@@ -91,7 +96,7 @@ div {
     float: left;
     display: block;
     width: 150px;
-    height: auto;
+    height: 260px;
     padding: 15px;
     margin-top: 10px;
     text-align: center;
@@ -100,18 +105,19 @@ div {
 #main_section article img {
     width: 140px;
     height: auto;
-    max-height: 250px;
+    max-height: 220px;
     box-shadow: 2px 2px 5px #999;
     margin: 10px;
 }
 
 
 #main_aside {
-    float: left;
-    width: 220px;
+    float: right;
+    display: block;
+    width: 30%;
     margin: 20px 0;
     padding: 20px;
-    background: #CCCCCC;
+    background: #e5e5e5;
 }
 
 #main_footer {
