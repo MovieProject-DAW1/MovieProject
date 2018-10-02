@@ -141,23 +141,23 @@ div {
 
 
 h4{
-    color:#1ABC9C;
+    color:white;
     font: bold 90px Arial, sans-serif;
     background: #34495E;
     width: 50%;
     height: 20%;
     margin: 5px 0;
-    border: solid #1ABC9C;
+    border: solid white;
     margin-left: 25%;
 }
 h5{
-    color:#1ABC9C;
+    color:white;
     font: bold 60px Arial, sans-serif;
     background: #34495E;
     width: 93%;
     height: 12%;
     margin: 5px 0;
-    border: solid #1ABC9C;
+    border: solid white;
     margin-left: 10%;
 }
 
@@ -178,7 +178,7 @@ h5{
     font-size: 15px;
     color: #1ABC9C;
     background-color: #34495E;
-    border:green;
+    border:1px red;
 }
 .boton_1:hover{
     color: #34495E;
