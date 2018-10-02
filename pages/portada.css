@@ -6,6 +6,9 @@
 h1 {
     font: bold 20px Arial, sans-serif;
 }
+.ratin{
+    margin-left: 35%;
+}
 
 h2 {
     font: bold 14px verdana, sans-serif;
@@ -14,6 +17,11 @@ h2 {
 a {
     text-decoration: none;
     color: black;
+}
+.links{
+    text-decoration: none;
+    color: #1ABC9C
+
 }
 
 header, section, footer, aside, nav, article, figure, figcaption, hgroup {
@@ -38,7 +46,7 @@ div {
 
 #wrapper {
     width: 100%;
-    max-width: 1900px;
+    max-width: 1500px;
     margin: 10px auto;
     text-align: left;
 }
@@ -51,7 +59,7 @@ div {
     top: 0;
     position: fixed;
     width: 100%;
-    max-width: 1900px;
+    max-width: 1500px;
     height: 125px;
 }
 #main_header img {
@@ -96,7 +104,7 @@ div {
 #main_section article {
     float: left;
     display: block;
-    width: 70%;
+    width: 90%;
     height: auto;
     padding: 15px;
     margin-top: 10px;
@@ -118,7 +126,7 @@ div {
 #main_aside {
     float: right;
     display: block;
-    width: 10%;
+    width: 20%;
     margin: 0 0;
     padding: 20px;
     background: #e5e5e5;
@@ -134,12 +142,27 @@ div {
 
 h4{
     color:#1ABC9C;
-    font: bold 40px Arial, sans-serif;
+    font: bold 90px Arial, sans-serif;
     background: #34495E;
-    width: 43%;
-    height: 10%;
+    width: 50%;
+    height: 20%;
     margin: 5px 0;
     border: solid #1ABC9C;
+    margin-left: 25%;
+}
+h5{
+    color:#1ABC9C;
+    font: bold 60px Arial, sans-serif;
+    background: #34495E;
+    width: 93%;
+    height: 12%;
+    margin: 5px 0;
+    border: solid #1ABC9C;
+    margin-left: 10%;
+}
+
+.ratingNumber{
+    margin-left: 60%;
 
 }
 
@@ -150,6 +173,7 @@ h4{
     height: 5%;
     padding-left: 10px;
     padding-right: 10px;
+
     font-weight: 800;
     font-size: 15px;
     color: #1ABC9C;
@@ -158,10 +182,24 @@ h4{
 }
 .boton_1:hover{
     color: #34495E;
-    background-color: #1ABC9C;;
+    background-color: #1ABC9C;
     text-decoration: none;
 }
 
-Comments{
-    border: thin black;
+#main_aside li{
+     display: inline-block;
+     list-style: none;
+     padding: 5px;
+
 }
+vote{
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.i{
+    width: 100%;
+    height: 60%;
+}
+
