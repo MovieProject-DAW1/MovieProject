@@ -10,6 +10,8 @@
 
 <body id="wrapper">
 
+<section id="content">
+
     <header id="main_header">
         <a href="index.html" target="_blank"> <img src="logo1.png"></a>
 
@@ -25,39 +27,66 @@
     </header>
 
 
-
     <aside id="main_aside">
 
+        <h3>Películas destacadas</h3>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="http://lareplica.es/wp-content/uploads/2018/06/Final-el-club-de-la-lucha.jpg"
+                     style="width:100%; height: 15em;">
+                <div class="text">El club de la Lucha</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="http://comunidad-axxess.com/wp-content/uploads/2012/09/The-Green-Mile.jpg"
+                     style="width:100%; height: 15em;">
+                <div class="text">La Milla Verde</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="http://img.europapress.es/fotoweb/fotonoticia_20151117104215_1280.jpg"
+                     style="width:100%; height: 15em;">
+                <div class="text">Memento</div>
+            </div>
+
+        </div>
+
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 10000); // Change image every 2 seconds
+            }
+
+        </script>
+
+        <h3>Últimos estrenos de cine</h3>
         <article>
-            <header>
-
-                <a href="pages/Portada1.html"><h1>Destacada</h1></a>
-
-            </header>
             <figure>
-                <a href="pages/Portada1.html"><img
-                        src="http://2.bp.blogspot.com/-XuFDkwSxnQU/VfiEAW6XYNI/AAAAAAAAHrs/HFlg45NWmSk/s1600/fight-club.25541.jpg"></a>
+                <a href="pages/Portada1.html">
+                    <h1>Deadpool 2</h1>
+                    <img src="https://media.services.cinergy.ch/media/box1600/ca93e72443de5c0a69c1c45fafabef2a56d57aca.jpg">
+                </a>
                 <figcaption>
-                    Fight Club, es una película satírica estadounidense de 1999 basada en la novela homónima de Chuck Palahniuk. La cinta fue dirigida por David Fincher y protagonizada por Edward Norton, Brad Pitt y Helena Bonham Carter. Norton interpreta al protagonista, un "hombre común", cuyo nombre no se revela, que está aburrido con su profesión liberal en la sociedad estadounidense, por lo que funda un "club de peleas" clandestino con un vendedor de jabones llamado Tyler Durden (interpretado por Brad Pitt), y se ve envuelto en una relación con éste y con Marla Singer, interpretada por Helena Bonham Carter.
+                    Comentario de la portada...
                 </figcaption>
             </figure>
-
-        </article>
-
-        <article>
-            <header>
-
-                <a href="pages/Portada1.html"><h1>Destacada</h1></a>
-
-            </header>
-            <figure>
-                <a href="pages/Portada1.html"><img
-                        src="http://2.bp.blogspot.com/-XuFDkwSxnQU/VfiEAW6XYNI/AAAAAAAAHrs/HFlg45NWmSk/s1600/fight-club.25541.jpg"></a>
-                <figcaption>
-                    Fight Club, es una película satírica estadounidense de 1999 basada en la novela homónima de Chuck Palahniuk. La cinta fue dirigida por David Fincher y protagonizada por Edward Norton, Brad Pitt y Helena Bonham Carter. Norton interpreta al protagonista, un "hombre común", cuyo nombre no se revela, que está aburrido con su profesión liberal en la sociedad estadounidense, por lo que funda un "club de peleas" clandestino con un vendedor de jabones llamado Tyler Durden (interpretado por Brad Pitt), y se ve envuelto en una relación con éste y con Marla Singer, interpretada por Helena Bonham Carter.
-                </figcaption>
-            </figure>
-
         </article>
 
     </aside>
@@ -159,9 +188,21 @@
                 </figcaption>
             </figure>
         </article>
+        <article>
+            <figure>
+                <a href="">
+                    <h1>Venom</h1>
+                    <img src="https://www.falcon.cz/wp/wp-content/uploads/2018/08/venom-poster-a1-bp.jpg">
+                </a>
+
+                <figcaption>
+                    Comentario de la portada ...
+                </figcaption>
+            </figure>
+        </article>
     </section>
 
-
+</section>
 
 
     <footer id="main_footer">
