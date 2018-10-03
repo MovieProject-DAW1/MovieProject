@@ -143,6 +143,18 @@ div {
     clear: both;
 }
 
+#main_aside2 {
+    float: right;
+    display: block;
+    width: 20%;
+    margin: 0 0;
+    padding: 20px;
+    background: #e5e5e5;
+    clear: both;
+    float:right;
+    margin-left:50%;
+}
+
 #main_footer {
     clear: both;
     text-align: center;
