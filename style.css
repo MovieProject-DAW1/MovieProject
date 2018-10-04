@@ -15,15 +15,16 @@ a {
     color: black;
 }
 
+
 header, section, footer, aside, nav, article, figure, figcaption, hgroup{
     display: block;
-    border-radius: 1em;
+    border-radius: 0.3em;
     font-family: Arial, Verdana, sans-serif;
 }
 
 body {
     text-align: center;
-    padding-top: 8em;
+    padding-top: 6.5em;
 }
 
 
@@ -37,7 +38,9 @@ body {
 
 #content {
     width: 100%;
-    height: 100%;
+    height: 160%;
+    position: relative;
+    max-height: 2000px;
     background-color: white;
     display: block;
 }
@@ -48,17 +51,54 @@ body {
     clear: both;
     top: 0;
     position: fixed;
+    z-index: 10;
     width: 100%;
     max-width: 75em;
-    height: 7.813em;
+    height: 6.5em;
 }
 
 #main_header img {
     float: left;
     padding-left: 1em;
-    width: 360px;
-    height: 100px;
+    width: 260px;
+    height: 75px;
 }
+
+/* BUSCADOR */
+
+#main_header .search-container {
+    float: right;
+    margin-top: 0.4em;
+}
+
+#main_header input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 0.1em solid #e2e2e2;
+    border-radius: 0.4em;
+}
+
+#main_header .search-container button {
+    float: right;
+    margin-top: 8px;
+    margin-right: 16px;;
+    cursor: pointer;
+    background: white;
+    border: none;
+}
+
+#main_header .search-container button img {
+    width: 35px;
+    height: auto;
+    padding: 1px;
+}
+
+#main_header .search-container button:hover {
+    background: #ccc;
+}
+
+
 
 
 #main_menu {
@@ -71,7 +111,7 @@ body {
     display: inline-block;
     list-style: none;
     padding: 5px;
-    font: bold 14px verdana, sans-serif;
+    font: bold 0.9em Arial, sans-serif;
     color: #1ABC9C;
 }
 
@@ -227,6 +267,10 @@ body {
 /* RESPONSIVE */
 
 @media only screen and (max-width: 480px) {
+
+    #main_header .search-container {
+        display: none;
+    }
 
     header, section, footer, aside, nav, article, figure, figcaption, hgroup {
         display: block;
