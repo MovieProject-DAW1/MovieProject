@@ -4,7 +4,7 @@ function loginValidation() {
 
 
     var http = new XMLHttpRequest();
-    var URL = '../data/data.json';
+    var URL = '../data/user.json';
 
 
     http.open('GET', URL, true);
@@ -16,7 +16,8 @@ function loginValidation() {
             var json_data = JSON.parse(this.responseText);
             console.log("Name: "+json_data.name, "Password: "+json_data.password);
             if (json_data.name==username && json_data.password==password){
-                window.alert("Bienvenido");
+                setCookie("username",json_data.name,24);
+                checkCookie();
                 return true;
             } else {
                 window.alert("Contraseña erronea");
@@ -41,6 +42,34 @@ function acces_fb() {
 
 function acces_google() {
     window.alert("Lo sentimos, el acceso con google no está disponible");
+}
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    var cadena = cname + "=" + cvalue + ";" + expires + ";path=/";
+    document.cookie = cadena;
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+function checkCookie() {
+    var user=getCookie("username");
+    if (user != "") {
+        alert("Bienvenido " + user);
+    }
 }
 
 
