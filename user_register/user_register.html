@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto web peliculas">
+    <meta name="keywords" content="peliculas, estrenos, sinopsis, trailer">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="user_register.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- JAVASCRIPT -->
+    <script language="javascript" type="text/javascript" src="user_register.js"></script>
+
+
+</head>
+
+<body id="wrapper">
+
+<!-- NAVEGATION WEB -->
+    <header id="main_header">
+        <a href="../index.html" target="_blank"> <img src="../logo1.png"></a>
+
+        <nav id="main_menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>Estrenos</li>
+                <li>Mas vistas</li>
+                <li>Mejores valoradas</li>
+                <li><a href="../login/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENT REGISTER -->
+
+    <div class="content_register">
+
+        <form action="user_register.html" name="form_user_register" onsubmit="return saveUser()" method="post">
+
+            <div class="title_register">
+                <h1>Crear cuenta</h1>
+            </div>
+
+            <div class="data_user_register">
+                <input class="input_data" type="text" placeholder="Usuario" name="username" >
+                <input class="input_data" type="text" placeholder="email" name="email" >
+                <input class="input_data" type="password" placeholder="Password" name="password" autocomplete="off" >
+                <input class="input_data" type="password" placeholder="Confirmar password" name="password_confirm" autocomplete="off" >
+            </div>
+
+            <div class="btn_register">
+                <button class="btn confirm" type="submit" value="submit">Aceptar</button>
+                <button class="btn clear" type="reset" value="Reset" >Limpiar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+
+<!-- CONTENT FOOTER -->
+<footer id="main_footer">
+    Copyright &copy; MovieDAW 2018
+</footer>
+
+
+</body>
+
+</html>

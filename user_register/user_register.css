@@ -1,0 +1,72 @@
+.content_register {
+    background: -moz-radial-gradient(
+            center, ellipse cover,
+            rgba(255,255,255,1) 0%,
+            rgba(246,246,246,1) 47%,
+            rgba(234,234,234,1) 62%,
+            rgba(219,219,219,1) 81%,
+            rgba(237,237,237,1) 100%);
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+
+.content_register form {
+    width: 50%;
+    margin: auto;
+    padding: 10px 10px 10px 10px ;
+    border: 1px lavender solid;
+    background: white;
+
+
+}
+
+.data_user_register, .btn_register, .title_register {
+    width: auto;
+    height: auto;
+    margin: auto;
+    overflow: auto;
+}
+
+.content_register h1 {
+    float: right;
+    background: white;
+    color:#34495E;
+
+}
+
+.input_data {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.80;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.confirm {
+    background: #34495E;
+    color: white;
+}
+.clear {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+
+
