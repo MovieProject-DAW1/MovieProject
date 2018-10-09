@@ -343,3 +343,21 @@ h5{
     }
 
 }
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 0.8em;
+    font-size: 4vw;
+
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+    content: "\2605";
+    color:#FEE60B;
+    position: absolute;
+}

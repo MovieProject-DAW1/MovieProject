@@ -10,6 +10,7 @@ h1 {
 
 h2 {
     font: bold 0.875em Arial, sans-serif;
+
 }
 
 a {
@@ -36,6 +37,7 @@ header, section, footer, aside, nav, article, figure, figcaption, hgroup {
 body {
     text-align: center;
     padding-top: 6.5em;
+
 }
 
 
@@ -119,12 +121,13 @@ body {
     background-color: white;
     border-radius: 5px;
 
+
 }
 
 #main_section article img {
     float: left;
     width: 200px;
-    height: 140px;
+    height: 120px;
     max-height: 4000px;
     box-shadow: 2px 2px 5px #999;
     margin: 10px;

@@ -35,18 +35,15 @@
             </form>
         </div>
         <p>---------------------------------------------</p>
-        <h1 class="ratin">Rating</h1>
-        <h4>7.0</h4>
-        <aside class="one">
-            <p>Critica Profesional</p>
-            <h5> 6.0 </h5>
-        </aside>
-        <aside class="two">
-            <p>Critica del Usuario</p>
-            <h5> 8.0 </h5>
-        </aside>
 
-        <a href="reparto.html" class="links">Vota</a>
+        <h1 class="ratin">Rating</h1>
+
+        <div class="rating">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </div>
+
+
+</body>
 
     </aside>
 
@@ -73,7 +70,27 @@
                         Morena Baccarin Morena Baccarin ... Vanessa
                         Julian Dennison Julian Dennison
                     </p>
-                    <a href="reparto.html" class="links">Ver todo el reparto</a>
+                    <a id ="cast" class="links">Ver todo el reparto</a>
+                    <script>
+                        //Variable que almacena el método window.open()
+                        var miVentana;
+
+                        //La función window_open crea el pop-up o ventana emergente
+                        function window_open(){
+                            miVentana = window.open( "repartoDP.html", "nombrePop-Up", "width=600,height=500, top=85,left=50");
+                        }
+
+                        //La función window_close cerrara el pop-up o ventana emergente
+                        function window_close(){
+                            miVentana.close();
+                        }
+
+                        // Llamo a la función window_open en el evento click del botón con id = "botonWindowOpen"
+                        document.getElementById("cast").onclick = function() {window_open()};
+
+                        // Llamo a la función window_close en el evento click del botón con id = "botonWindowClose"
+
+                    </script>
                 </figcaption>
             </figure>
         </article>
