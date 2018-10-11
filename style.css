@@ -225,8 +225,8 @@ body {
 }
 
 #main_aside article img {
-    width: 23%;
-    height: auto;
+    width: 50%;
+    height: 20%;
     max-height: 160px;
     float: right;
     display: block;
