@@ -33,13 +33,14 @@ body {
     margin: 10px auto;
     text-align: left;
     background-color: #eeeeee;
+    background: linear-gradient(to bottom, rgba(67, 93, 122, 1) 0%, rgba(67, 93, 122, 1) 1%, rgba(67, 93, 122, 1) 3%, rgba(247, 247, 247, 1) 72%, rgba(247, 247, 247, 1) 98%, rgba(247, 247, 247, 1) 100%);
 }
 
 #content {
     width: 100%;
     height: 100%;
     position: relative;
-    max-height: 1500px;
+
     background-color: white;
     display: block;
     box-shadow: 2px 2px 2px #616161;
