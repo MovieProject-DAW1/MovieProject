@@ -40,7 +40,7 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-
+    min-height: 800px;
     background-color: white;
     display: block;
     box-shadow: 2px 2px 2px #616161;
@@ -314,6 +314,96 @@ body {
 
 /* RESPONSIVE */
 
+
+@media only screen and (max-width: 768px)  {
+    #main_header .search-container {
+        display: none;
+    }
+
+    header, section, footer, aside, nav, article, figure, figcaption, hgroup {
+        display: block;
+        border-radius: 0;
+    }
+
+    #wrapper {
+        background: white;
+        margin-top: 90px;
+    }
+
+    #content {
+        min-height: 900px;
+    }
+
+    #main_aside{
+        width: 40%;
+    }
+
+    #aside_left {
+        display: none;
+    }
+
+    #main_header {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    #main_header img {
+        float: left;
+        width: 60%;
+        height: auto;
+
+    }
+
+    #main_menu {
+        width: 100%;
+        height: auto;
+    }
+
+    #main_menu li {
+        font-size: 3vw;
+    }
+
+    .main_section {
+        margin: 0;
+        width: 50%;
+        padding: 10px;
+    }
+
+    .main_section article {
+        width: 40%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .desp {
+        display: none;
+    }
+
+    .main_section article img {
+        width: 90%;
+        height: auto;
+        max-height: 260px;
+        box-shadow: 2px 2px 5px #999;
+        margin: 20px;
+    }
+
+    .main_section h3 {
+        width: 100%;
+        height: auto;
+        font-size: 4vw;
+    }
+
+    h1 {
+        font-size: 3vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+}
+
+
 @media only screen and (max-width: 480px) {
 
     #main_header .search-container {
@@ -330,12 +420,17 @@ body {
         margin-top: 50px;
     }
 
+    #content {
+        min-height: 900px;
+    }
+
     #main_aside {
         display: none;
     }
 
     #aside_left {
-        display: none;
+        display: block;
+        width: 30%;
     }
 
     #main_header {
@@ -362,17 +457,18 @@ body {
 
     .main_section {
         margin: 0;
-        width: 90%;
+        width: 50%;
+        min-height: 90%;
     }
 
     .main_section article {
-        width: 100%;
+        width: 90%;
         height: auto;
         padding-top: 10px;
     }
 
     .main_section article img {
-        width: 50%;
+        width: 100%;
         height: auto;
         max-height: 260px;
         box-shadow: 2px 2px 5px #999;
@@ -394,3 +490,4 @@ body {
     }
 
 }
+
