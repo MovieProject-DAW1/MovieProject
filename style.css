@@ -15,7 +15,6 @@ a {
     color: black;
 }
 
-
 header, section, footer, aside, nav, article, figure, figcaption, hgroup{
     display: block;
     border-radius: 0.3em;
