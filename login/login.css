@@ -14,12 +14,11 @@
     width: 100%;
     height: auto;
     text-align: center;
-    right: 100px;
 }
 .login .login-title {
-    margin: 0 auto;
     width: 100%;
     height: auto;
+    margin: 0 auto;
     padding: 10px 0px 10px 0px;
     color: #34495E;
 }
@@ -41,10 +40,11 @@
 
 
 .login button {
-    float: right;
-    width: 70%;
+    display: block;
+    width: 80%;
     height: auto;
-    margin: 50px 0px 10px 0px;
+    margin: 0 auto;
+    margin-top: 50px;
     overflow: auto;
     font-size: 1em;
     padding: 5px;
@@ -165,7 +165,8 @@
     .login button {
         width: 90%;
         height: auto;
-        margin: 15px 0px 10px 0px;
+        margin: 0 auto;
+        margin-top: 50px;
         overflow: auto;
         font-size: 1em;
         padding: 5px;
