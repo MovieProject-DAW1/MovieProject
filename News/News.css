@@ -365,6 +365,10 @@ h5{
         display:none;
     }
 
+    h3{
+        font-size: 2vw;
+    }
+
 
     .trailer{
         height: 10%;
@@ -473,8 +477,4 @@ h5{
         width:100%;
         height: auto;
     }
-
-
-
-
 }
