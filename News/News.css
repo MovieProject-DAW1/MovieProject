@@ -270,6 +270,7 @@ h5{
     height: 60%;
 }
 
+
 /* RESPONSIVE */
 
 
@@ -285,7 +286,7 @@ h5{
 
     #wrapper {
         background: white;
-        margin-top: 90px;
+        margin-top: 10%;
     }
 
     #content {
@@ -303,7 +304,7 @@ h5{
     }
 
     #main_header {
-        width: 90%;
+        width: 93%;
         height: auto;
         padding: 10px;
     }
@@ -324,14 +325,15 @@ h5{
         font-size: 3vw;
     }
 
-    .main_section {
+    #main_section {
         margin: 0;
-        width: 50%;
+        width: 85%;
         padding: 10px;
+
     }
 
-    .main_section article {
-        width: 40%;
+    #main_section article {
+        width: 99%;
         height: auto;
         padding: 10px;
     }
@@ -340,9 +342,9 @@ h5{
         display: none;
     }
 
-    .main_section article img {
-        width: 90%;
-        height: auto;
+    #main_section article img {
+        width: 50%;
+        height: 30%;
         max-height: 260px;
         box-shadow: 2px 2px 5px #999;
         margin: 20px;
@@ -351,7 +353,7 @@ h5{
     .main_section h3 {
         width: 100%;
         height: auto;
-        font-size: 4vw;
+        font-size: 2vw;
     }
 
     h1 {
@@ -375,7 +377,7 @@ h5{
         widht: 50%;
     }
     .comments{
-        width: 50%;
+        width: 80%;
     }
 }
 
@@ -394,7 +396,7 @@ h5{
 
     #wrapper {
         background: white;
-        margin-top: 50px;
+        margin-top: 5%;
     }
 
     #content {
@@ -444,18 +446,18 @@ h5{
         padding-top: 10px;
     }
 
-    .main_section article img {
+    #main_section article img {
         width: 100%;
-        height: auto;
+        height: 50%;
         max-height: 260px;
         box-shadow: 2px 2px 5px #999;
         margin: 5px;
     }
 
-    .main_section h3 {
+    #main_section h3 {
         width:100%;
         height: auto;
-        font-size: 4vw;
+        font-size: 2.8vw;
     }
 
     h1 {
@@ -465,16 +467,30 @@ h5{
     h2 {
         font-size: 4vw;
     }
+    h3 {
+        font-size: 1em;
+    }
 
     .main_article{
         width: 100%;
     }
 
     .comments{
-        width: 30%;
+        width: 80%;
+
     }
     .imsec{
         width:100%;
         height: auto;
     }
+    .description{
+        display:none;
+    }
+    #titulo{
+        font-size: 1em;
+    }
 }
+
+
+
+

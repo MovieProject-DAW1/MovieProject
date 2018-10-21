@@ -52,7 +52,7 @@ body {
     width: 100%;
     height: 100%;
     max-height: 3000px;
-    background-color: white;
+
     display: block;
 }
 
@@ -162,6 +162,15 @@ body {
     padding: 10px;
 }
 
+#main_article ratingg{
+    background:green;
+
+}
+span{
+    font-size: 3em;
+    margin:1.8%;
+}
+
 /* BUSCADOR */
 
 #main_aside .search-container {
@@ -266,14 +275,11 @@ h5{
     height: 60%;
 }
 
-.ratingg{
-    display: none;
-}
-
 .trailer{
     height: 10%;
     widht: 50%;
 }
+
 
 /* RESPONSIVE */
 
@@ -290,7 +296,7 @@ h5{
 
     #wrapper {
         background: white;
-        margin-top: 90px;
+        margin-top: 5%;
     }
 
     #content {
@@ -322,21 +328,21 @@ h5{
 
     #main_menu {
         width: 100%;
-        height: auto;
+        height: 10%;
     }
 
     #main_menu li {
         font-size: 3vw;
     }
 
-    .main_section {
+    #main_section {
         margin: 0;
-        width: 50%;
-        padding: 10px;
+        width: 80%;
+        padding: 50px;
     }
 
-    .main_section article {
-        width: 40%;
+    #main_section article {
+        width: 98%;
         height: auto;
         padding: 10px;
     }
@@ -348,7 +354,7 @@ h5{
     .main_section article img {
         width: 90%;
         height: auto;
-        max-height: 260px;
+
         box-shadow: 2px 2px 5px #999;
         margin: 20px;
     }
@@ -370,13 +376,13 @@ h5{
         display:none;
     }
 
-
-    .trailer{
-        height: 10%;
-        widht: 50%;
-    }
     .comments{
         width: 80%;
+    }
+
+    .i{
+        height: 30%;
+        widht: 20%;
     }
 }
 
@@ -395,7 +401,7 @@ h5{
 
     #wrapper {
         background: white;
-        margin-top: 50px;
+        margin-top: 4%;
     }
 
     #content {
@@ -432,10 +438,9 @@ h5{
     #main_menu li {
         font-size: 3vw;
     }
-
-    .main_section {
-        margin: 0;
-        width: 90%;
+    #main_section {
+        margin: 5%;
+        width: 83%;
         min-height: 90%;
     }
 
@@ -460,7 +465,8 @@ h5{
     }
 
     h1 {
-        font-size: 6vw;
+        font-size: 5vw;
+
     }
 
     h2 {
@@ -474,9 +480,10 @@ h5{
     .comments{
         width: 70%;
     }
-    trailer{
-        width: 30px;
-        height: 20px;
+
+    .i{
+        height: 30%;
+        widht: 20%;
     }
 
 }
