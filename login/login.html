@@ -1,0 +1,90 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- JAVASCRIPT -->
+    <script language="javascript" type="text/javascript" src="login.js"></script>
+
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto web peliculas">
+    <meta name="keywords" content="peliculas, estrenos, sinopsis, trailer">
+
+</head>
+
+<body id="wrapper">
+
+    <!-- NAVEGATION WEB -->
+    <header id="main_header">
+        <a href="../index.html" target="_blank"> <img src="../img/logo1.png"></a>
+
+        <div class="search-container">
+            <form action="">
+                <input type="text" placeholder="Busca tu pelicula..." name="search">
+                <button type="submit"><i class="fa fa-search"><img src="../img/search.png"> </i></button>
+            </form>
+        </div>
+
+
+
+        <nav id="main_menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>Estrenos</li>
+                <li>Mas vistas</li>
+                <li>Mejores valoradas</li>
+                <li><a href="../News/News.html">Noticias</a></li>
+                <li><a href="../login/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENT LOGIN -->
+    <div onload="checkCookie()" class="login">
+
+        <form action="login.html" name="form_login" onsubmit="return loginValidation()" method="post">
+
+            <div class="login-title">
+                <h1>Bienvenido</h1>
+                <hr>
+            </div>
+
+            <input type="text" placeholder="Usuario" name="username"  autocomplete="off" required>
+            <input type="password" placeholder="Password" name="password" autocomplete="off" required>
+            <button type="submit" value="submit">Acceder</button>
+
+
+
+            <div class="text-login">
+                <div class="text-login-sign-up">
+                    <span>¿No tienes una cuenta?</span>
+                    <a href="../user_register/user_register.html">Regístrate</a>
+                </div>
+                <div class="text-login-help">
+                    <a href="#" onclick="remember_user()">¿Has olvidado su contraseña?</a>
+                </div>
+            </div>
+
+
+            <div class="social_net">
+                <a onclick="acces_fb()" href="#" class="fb btn">Login with Facebook </a>
+                <a onclick="acces_google()" href="#" class="google btn">Login with Google+</a>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- CONTENT FOOTER -->
+    <footer id="main_footer">
+        Copyright &copy; MovieDAW 2018
+    </footer>
+
+
+</body>
+
+</html>

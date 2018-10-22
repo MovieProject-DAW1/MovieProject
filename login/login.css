@@ -1,0 +1,218 @@
+.login {
+    overflow: auto;
+
+    background: rgba(255,255,255,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 44%, rgba(235,235,235,1) 71%, rgba(242,242,242,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(44%, rgba(224,224,224,1)), color-stop(71%, rgba(235,235,235,1)), color-stop(100%, rgba(242,242,242,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 44%, rgba(235,235,235,1) 71%, rgba(242,242,242,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 44%, rgba(235,235,235,1) 71%, rgba(242,242,242,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 44%, rgba(235,235,235,1) 71%, rgba(242,242,242,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 44%, rgba(235,235,235,1) 71%, rgba(242,242,242,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2', GradientType=1 );
+
+    float: left;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.login .login-title {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
+    color: #34495E;
+}
+.login-title h1 {
+    padding-bottom: 10px;
+}
+.login-title hr {
+    color: #34495E;
+}
+.login form{
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: center;
+    background: white;
+    padding: 30px 70px 20px 70px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+
+.login button {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    overflow: auto;
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 15px;
+    background: #34495E;
+    color: white;
+    border: none;
+    opacity: 0.90;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.login button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    opacity: 1;
+}
+
+.login input{
+    background:#F2F2F2;
+    width: 100%;
+    height: auto;
+    margin: 2px;
+    padding: 10px;
+    font-size: 1em;
+    outline: none;
+    border: none;
+}
+.login input:focus {
+    border: 1px solid  lightgrey;
+}
+.text-login {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.text-login-sign-up, .text-login-help{
+    width: 100%;
+    padding: 1px;
+    margin: 0px;
+}
+.text-login div {
+    color: #999999;
+}
+.text-login a {
+    color: #666666;
+}
+
+
+.social_net {
+    overflow: auto;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+}
+.social_net .fb {
+    background-color: #3B5998;
+    color: white;
+}
+.social_net .google {
+    background-color: #dd4b39;
+    color: white;
+}
+
+
+.social_net .btn {
+    width: 90%;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */
+}
+
+@media only screen and (max-width: 600px) {
+    .login {
+        margin: 0 auto;
+        overflow: auto;
+        background: rgba(255,255,255,1);
+        /*    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(212,233,244,1) 55%, rgba(210,232,244,1) 57%, rgba(176,201,222,1) 100%);*/
+        float: left;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        right: 100px;
+    }
+
+    .login .login-title {
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+        padding: 10px 0px 10px 0px;
+        color: #34495E;
+    }
+
+    .login-title h1 {
+        padding-bottom: 10px;
+    }
+
+    .login-title hr {
+        color: #34495E;
+    }
+
+    .login form{
+        margin: 0 auto;
+        text-align: center;
+        background: white;
+        padding: 1px 0px 1px 0px;
+        border-radius: 0px;
+        width: 100%;
+    }
+
+
+    .login button {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 50px;
+        overflow: auto;
+        font-size: 1em;
+        padding: 5px;
+        border-radius: 15px;
+        background: #34495E;
+        color: white;
+        border: none;
+        opacity: 0.90;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    .login button:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        opacity: 1;
+    }
+
+    .login input{
+        background:#F2F2F2;
+        width: 90%;
+        height: auto;
+        margin: 2px;
+        padding: 10px;
+        font-size: 1em;
+        outline: none;
+        border: none;
+    }
+
+    .text-login {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .text-login-sign-up, .text-login-help{
+        width: 90%;
+        padding: 1px;
+        margin: 0px;
+    }
+    .text-login div {
+        color: #999999;
+    }
+    .text-login a {
+        color: #666666;
+    }
+
+
+
+}
