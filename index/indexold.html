@@ -1,0 +1,249 @@
+
+<header id="main_header">
+    <a href="index.html" target="_blank"> <img src="img/logo1.png"></a>
+
+    <div class="search-container">
+        <form action="">
+            <input type="text" placeholder="Busca tu pelicula..." name="search">
+            <button type="submit"><i class="fa fa-search"><img src="img/search.png"> </i></button>
+        </form>
+    </div>
+
+
+
+    <nav id="main_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>Estrenos</li>
+            <li>Mas vistas</li>
+            <li>Mejores valoradas</li>
+            <li><a href="News/News.html">Noticias</a></li>
+            <li><a href="login/login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<aside id="main_aside">
+
+    <h3>Películas destacadas</h3>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="http://lareplica.es/wp-content/uploads/2018/06/Final-el-club-de-la-lucha.jpg"
+                 style="width:100%; height: 15em;">
+            <div class="text">El club de la Lucha</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="http://comunidad-axxess.com/wp-content/uploads/2012/09/The-Green-Mile.jpg"
+                 style="width:100%; height: 15em;">
+            <div class="text">La Milla Verde</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="http://img.europapress.es/fotoweb/fotonoticia_20151117104215_1280.jpg"
+                 style="width:100%; height: 15em;">
+            <div class="text">Memento</div>
+        </div>
+
+    </div>
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 10000); // Change image every 2 seconds
+        }
+
+    </script>
+
+    <h3>Noticias de cine</h3>
+    <article>
+        <figure>
+            <p class="crop"> <a href="News/News1.html">
+                <img src="https://img.europapress.es/fotoweb/fotonoticia_20180527104215_640.jpg"></p>
+            <h1>Morbius, la siguiente película de Marvel</h1>
+            </a>
+            <figcaption>
+                <h2>Seguir Leyendo...</h2>
+            </figcaption>
+        </figure>
+    </article>
+
+    <article>
+        <figure>
+            <p class="crop"><a href="News/News2.html">
+                <img src="http://es.web.img3.acsta.net/c_640_320/newsv7/18/10/04/22/34/3720359.jpg"></p>
+            <h1>El retorno de las brujas</h1>
+            </a>
+            <figcaption>
+                <h2>Seguir Leyendo...</h2>
+            </figcaption>
+        </figure>
+    </article>
+
+
+</aside>
+
+
+
+<aside id="aside_left">
+
+    <h3>TOPS 5</h3>
+    <article>
+        <figure>
+            <a href="pages/Portada1.html">
+                <h1>Las más vistas</h1>
+            </a>
+
+            <li>1 Venom</li>
+            <li>2 Ha nacido una estrella</li>
+            <li>3 El reino</li>
+            <li>4 Todos lo saben</li>
+            <li>5 Ola de crímenes</li>
+        </figure>
+    </article>
+
+    <article>
+        <figure>
+            <a href="pages/Portada1.html">
+                <h1>Las más valoradas</h1>
+            </a>
+            <li>1 El padrino</li>
+            <li>2 Cadena perpetua</li>
+            <li>3 La lista de Schindler</li>
+            <li>4 Pulp Fiction</li>
+            <li>5 Psicosis</li>
+        </figure>
+    </article>
+
+    <article>
+        <figure>
+            <a href="pages/Portada1.html">
+                <h1>Peor puntuadas</h1>
+            </a>
+            <li>1 Future World</li>
+            <li>2 Black Flowers</li>
+            <li>3 Guardians</li>
+            <li>4 Taxi 5</li>
+            <li>5 Ant-Man y la Avispa</li>
+        </figure>
+    </article>
+
+
+</aside>
+
+<section class="main_section">
+
+    <h3>Últimos estrenos de cine</h3>
+
+
+    <article>
+        <figure>
+            <a href="pages/Portada1.html">
+                <h1>Deadpool 2</h1>
+                <img src="https://media.services.cinergy.ch/media/box1600/ca93e72443de5c0a69c1c45fafabef2a56d57aca.jpg">
+            </a>
+            <figcaption>
+                Comentario de la portada...
+            </figcaption>
+        </figure>
+    </article>
+
+    <article>
+        <figure>
+            <a href="pages/Portada1.html">
+                <h1>Deadpool 2</h1>
+                <img src="https://media.services.cinergy.ch/media/box1600/ca93e72443de5c0a69c1c45fafabef2a56d57aca.jpg">
+            </a>
+            <figcaption>
+                Comentario de la portada...
+            </figcaption>
+        </figure>
+    </article>
+
+    <div class="desp">
+        <article>
+            <figure>
+                <a href="pages/Portada1.html">
+                    <h1>Deadpool 2</h1>
+                    <img src="https://media.services.cinergy.ch/media/box1600/ca93e72443de5c0a69c1c45fafabef2a56d57aca.jpg">
+                </a>
+
+                <figcaption>
+                    Comentario de la portada...
+                </figcaption>
+            </figure>
+        </article>
+    </div>
+
+</section>
+
+
+<section class="main_section">
+    <h3>Próximos estrenos de cine</h3>
+
+    <article>
+        <figure>
+            <a href="pages/portada2.html">
+                <h1>Venom</h1>
+                <img src="https://www.falcon.cz/wp/wp-content/uploads/2018/08/venom-poster-a1-bp.jpg">
+            </a>
+
+            <figcaption>
+                Comentario de la portada ...
+            </figcaption>
+        </figure>
+
+    </article>
+    <article>
+        <figure>
+            <a href="pages/portada2.html">
+                <h1>Venom</h1>
+                <img src="https://www.falcon.cz/wp/wp-content/uploads/2018/08/venom-poster-a1-bp.jpg">
+            </a>
+
+            <figcaption>
+                Comentario de la portada ...
+            </figcaption>
+        </figure>
+    </article>
+    <div class="desp">
+        <article>
+            <figure>
+                <a href="pages/portada2.html">
+                    <h1>Venom</h1>
+                    <img src="https://www.falcon.cz/wp/wp-content/uploads/2018/08/venom-poster-a1-bp.jpg">
+                </a>
+
+                <figcaption>
+                    Comentario de la portada ...
+                </figcaption>
+            </figure>
+        </article>
+    </div>
+</section>
+
+
+</div>
+
+
+
+<footer id="main_footer">
+    Copyright &copy; MovieDAW 2018
+</footer>
