@@ -1,6 +1,6 @@
 function loginValidation() {
-    var password = document.forms["form_login"]["password"].value;
-    var username = document.forms["form_login"]["username"].value;
+    var password = document.forms["sign-nav"]["password"].value;
+    var email = document.forms["sign-nav"]["email"].value;
 
 
     var http = new XMLHttpRequest();
@@ -12,38 +12,37 @@ function loginValidation() {
 
     http.onreadystatechange = function () {
 
-        if (this.readyState==4 && this.status==200) {
-            var json_data = JSON.parse(this.responseText);
-            console.log("Name: "+json_data.name, "Password: "+json_data.password);
-            if (json_data.name==username && json_data.password==password){
-                setCookie("username",json_data.name,24);
-                checkCookie();
-                return true;
-            } else {
-                window.alert("Contraseña erronea");
-                return false;
-            }
+        if (!(this.readyState === 4 && this.status === 200)) {
+            return;
         }
+
+        var json_data = JSON.parse(this.responseText);
+        for (i = 0; i < json_data.length; i++) {
+
+            if (json_data[i].email === email) {
+                if (password === json_data[i].password) {
+                    window.alert("Bienvenido " + json_data[i].name);
+                    /* Cambiar false por true*/
+                    return false;
+                } else {
+                    window.alert("Contraseña erronea");
+                    /* Cambiar false por true*/
+                    return false;
+                }
+                break;
+            }
+
+        }
+        window.alert("Usuario no encontrado");
 
     };
     return false;
 }
 
-function sign_up(){
-    window.alert("Lo sentimos, el sistema de registro no está disponible");
-}
-function remember_user() {
-    window.alert("Lo sentimos, el sistema de recuperación de contraseña no está disponible");
-}
 
-function acces_fb() {
-    window.alert("Lo sentimos, el acceso con facebook no está disponible");
+function fuction_noFound() {
+    window.alert("Lo sentimos, esta función aun no está implementada");
 }
-
-function acces_google() {
-    window.alert("Lo sentimos, el acceso con google no está disponible");
-}
-
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
