@@ -4,7 +4,7 @@ function loginValidation() {
 
 
     var http = new XMLHttpRequest();
-    var URL = '../data/user.json';
+    var URL = 'http://localhost:63342/MovieProject/data/user.json';
 
 
     http.open('GET', URL, true);

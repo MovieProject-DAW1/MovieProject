@@ -17,16 +17,18 @@
 
 
     <!-- JAVASCRIPT, CSS AND ICON SOCIAL NET-->
-    <script language="javascript" type="text/javascript" src="login.js"></script>
-    <link rel="stylesheet" href="login.css">
+    <script language="javascript" type="text/javascript" src="http://localhost:63342/MovieProject/login/login.js"></script>
+    <link rel="stylesheet" href="http://localhost:63342/MovieProject/login/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <!-- NAVEGATION WEB -->
 
-        <nav class="navbar-expand-lg navbar navbar-dark bg-dark">
+    <!-- NAVEGATION WEB -->
+    <nav class="navbar-expand-lg navbar navbar-dark bg-dark">
+
+            <!-- MENU COLLAPSE -->
             <a class="navbar-brand" href="#">Movie DAW</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,10 +37,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                        <a id="id-home" class="nav-link" href="#">Home </a>
+                        <a id="id-home" class="nav-link" href="http://localhost:63342/MovieProject/index.html">Home </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Noticias</a>
+                        <a class="nav-link" href="http://localhost:63342/MovieProject/News/News.html">Noticias</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#open-login" data-toggle="modal">Login</a>
@@ -51,9 +53,8 @@
             </div>
         </nav>
 
-
-        <!-- LOGIN -->
-        <div class="modal fade" id="open-login" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- LOGIN -->
+    <div class="modal fade" id="open-login" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
 
@@ -66,11 +67,10 @@
                         </button>
                     </div>
 
-
                     <!--- Cuerpo model -->
                     <div class="modal-body">
-                        <form action="login.html" name="sign-nav" onsubmit="return loginValidation()" method="post">
-                            <div class="form-group">
+                        <form action="http://localhost:63342/MovieProject/login/login.html" name="sign-nav" onsubmit="return loginValidation()" method="post">
+                            <div class="form-group ">
                                 <input type="email" name="email" class="form-control" id="Inputemail" placeholder="Email">
                             </div>
                             <div class="form-group">
@@ -82,7 +82,7 @@
                             </div>
                             <div class="form-group">
                                 ¿Eres nuevo?
-                                <a href="">Registrate</a>
+                                <a href="http://localhost:63342/MovieProject/sign-in/sign-in.html">Registrate</a>
                             </div>
                         </form>
                     </div>
