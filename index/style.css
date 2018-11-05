@@ -12,9 +12,12 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 100px;
 }
 
+.img-box {
+    max-height: 300px;
+}
+
 .carousel {
     margin-top: 1%;
-    box-shadow: 1px 1px 1px #616161;
 }
 
 .col-md-2 {
@@ -34,15 +37,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .carousel-item {
     top: -80px;
+    min-height: 400px;
     max-height: 400px;
 }
 
+.carousel-lightbox {
+    top: 0;
+}
+
 .carousel-caption {
-    background-color: rgba(18, 18, 18, 0.44);
+    background-color: rgba(18, 18, 18, 0.55);
     width: 100%;
     position: absolute;
     right: 0;
-    bottom: 5px;
+    bottom: 10px;
     left: 0;
     z-index: 20;
     padding-top: 20px;
@@ -52,33 +60,48 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.carousel2 {
-    margin-bottom: 0;
-    padding: 0 40px 30px 40px;
+.box{
+    background-color: rgba(18, 18, 18, 0.55);
+    width: 95%;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 2.1%;
+
 }
 
-/* Reposition the controls slightly */
 .carousel-control {
-    left: -12px;
+    padding-top:10%;
+    width:5%;
 }
 
-.carousel-control.right {
-    right: -12px;
+#myCarousel {
+    width: 100%;
+    max-height: 350px;
+    padding-left: 1%;
 }
 
-/* Changes the position of the indicators */
-.carousel-indicators2 {
-    right: 50%;
-    top: auto;
-    bottom: 0;
-    margin-right: -19px;
+
+.lightbox {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    padding: 5px;
+    margin: 5px;
 }
 
-/* Changes the colour of the indicators */
-.carousel-indicators2 li {
-    background: #c0c0c0;
+.lightbox img{
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    max-height: 270px;
+    box-shadow: 2px 2px 2px #616161;
 }
 
-.carousel-indicators2 .active {
-    background: #333333;
+#main_footer {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #999999;
 }
+
