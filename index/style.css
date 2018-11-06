@@ -24,6 +24,28 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.5%;
 }
 
+.article {
+    width: 100%;
+    height: auto;
+    display: block;
+    clear: both;
+    padding: 1px;
+    font-family: Arial, Verdana, sans-serif;
+
+}
+
+
+.article img {
+    width: 60%;
+    height: 20%;
+    max-height: 160px;
+    float: left;
+    display: block;
+    margin-right: 10px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+
 .cabecera {
     max-height: 300px;
 }
@@ -36,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .carousel-item {
-    top: -80px;
+    top: -30px;
     min-height: 400px;
     max-height: 400px;
 }
@@ -54,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     z-index: 20;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     color: #fff;
     text-align: center;
 
@@ -86,13 +108,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: auto;
     max-width: 200px;
-    padding: 5px;
-    margin: 5px;
+    padding: 3px;
+    margin: 3px;
 }
 
 .lightbox img{
     width: 100%;
     height: auto;
+    min-width: 160px;
     max-width: 250px;
     max-height: 270px;
     box-shadow: 2px 2px 2px #616161;
