@@ -4,7 +4,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../index/style.css">
 
     <!-- JAVASCRIPT -->
     <script language="javascript" type="text/javascript" src="login.js"></script>
@@ -30,8 +30,6 @@
             </form>
         </div>
 
-
-
         <nav id="main_menu">
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -47,7 +45,7 @@
     <!-- CONTENT LOGIN -->
     <div onload="checkCookie()" class="login">
 
-        <form action="login.html" name="form_login" method="post">
+        <form action="login.html" name="form_login" onsubmit="return loginValidation()" method="post">
 
             <div class="login-title">
                 <h1>Bienvenido</h1>
@@ -57,6 +55,7 @@
             <input type="text" placeholder="Usuario" name="username"  autocomplete="off" required>
             <input type="password" placeholder="Password" name="password" autocomplete="off" required>
             <button type="submit" value="submit">Acceder</button>
+
 
 
             <div class="text-login">
