@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index/style.css">
@@ -14,47 +15,50 @@
 
 <div class="row-fluid">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><img src="img/logo1.png" class="img-logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="News/News.html">Noticias</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Login</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo2.png" class="img-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="News/News.html">Noticias</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Login</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
         </div>
     </nav>
 
 </div>
 
-<div class="container-fluid">
+<div class="container">
 
     <div class="row">
         <div class="col-md-10">
@@ -81,7 +85,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="img/carousel/infinitywar1.jpg" alt="Third slide">
+                        <img class="d-block w-100d-block w-100" src="img/carousel/infinitywar1.jpg" alt="Third slide">
                         <div class="carousel-caption d-md-block">
                             <h5>Vengadores: Infinity War</h5>
                             <p>Cine fantástico/Cine de ciencia ficción ‧ Duración: 2h 40m</p>
@@ -107,99 +111,113 @@
 
     </div>
 
+    <div class ="row">
 
-    <div class="col-md-12">
+        <div class="col-md-4">
 
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-            <div class="carousel-inner">
-                <div class="carousel-item carousel-lightbox active">
-                    <div class="row">
-
-                        <div class="col-sm-2 lightbox">
-                            <a href="#x"><img src="img/deadpool2.jpg" alt="Image" class="img-responsive"></a>
-                            <div class="carousel-caption box d-md-block">
-                                <h5>Deadpool 2</h5>
-                            </div>
-                        </div>
-                        <div class="col-sm-2 lightbox">
-                            <a href="#x"><img src="img/equalizer.jpg" alt="Image" class="img-responsive"></a>
-                            <div class="carousel-caption box d-md-block">
-                                <h5>Equalizer 2</h5>
-                            </div>
-                        </div>
-                        <div class="col-sm-2 lightbox">
-                            <a href="#x"><img src="img/readyplayerone.jpg" alt="Image" class="img-responsive"></a>
-                            <div class="carousel-caption box d-md-block">
-                                <h5>Ready Player One</h5>
-                            </div>
-                        </div>
-                        <div class="col-sm-2 lightbox">
-                            <a href="#x"><img src="img/greatshowman.jpg" alt="Image" class="img-responsive"></a>
-                            <div class="carousel-caption box d-md-block">
-                                <h5>El Gran Showman</h5>
-                            </div>
-                        </div>
-                        <div class="col-sm-2 lightbox">
-                            <a href="#x"><img src="img/jurassicworld.jpg" alt="Image" class="img-responsive"></a>
-                            <div class="carousel-caption box d-md-block">
-                                <h5>Jurassic World</h5>
-                            </div>
-                        </div>
-                        <div class="col-sm-2 lightbox">
-                            <a href="#x"><img src="img/fallout.jpg" alt="Image" class="img-responsive"></a>
-                            <div class="carousel-caption box d-md-block">
-                                <h5>Mision Imposible 6</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-lightbox">
-                    <div class="row">
-                        <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
-                        </div>
-                        <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
-                        </div>
-                        <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
-                        </div>
-                        <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
-                        </div>
-                        <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
-                        </div>
-                        <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-lightbox">
-                    <div class="row">
-                        <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
-                        </div>
-                        <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
-                        </div>
-                        <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
-                        </div>
-                        <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
-                        </div>
-                        <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
-                        </div>
-                        <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
-                        </div>
-                    </div>
-                </div>
+            <h4>Noticias de cine</h4>
+            <div class="article">
+                <figure>
+                    <a href="News/News1.html"><img src="https://img.europapress.es/fotoweb/fotonoticia_20180527104215_640.jpg">
+                        <h5>Morbius, la siguiente película de Marvel</h5>
+                    </a>
+                    <figcaption>
+                        <h6>Seguir Leyendo...</h6>
+                    </figcaption>
+                </figure>
             </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+
+            <div class="article">
+                <figure>
+                    <a href="News/News1.html">
+                        <img src="https://img.europapress.es/fotoweb/fotonoticia_20180527104215_640.jpg"></p>
+                        <h5>Morbius, la siguiente película de Marvel</h5>
+                    </a>
+                    <figcaption>
+                        <h6>Seguir Leyendo...</h6>
+                    </figcaption>
+                </figure>
+            </div>
+
+
         </div>
+
+        <div class="col-md-8">
+
+            <h5>Últimos estrenos</h5>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel-lightbox active">
+                        <div class="row">
+
+                            <div class="col-sm-2 lightbox">
+                                <a href="#x"><img src="img/deadpool2.jpg" alt="Image" class="img-responsive"></a>
+                                <div class="carousel-caption box d-md-block">
+                                    <h5>Deadpool 2</h5>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 lightbox">
+                                <a href="#x"><img src="img/equalizer.jpg" alt="Image" class="img-responsive"></a>
+                                <div class="carousel-caption box d-md-block">
+                                    <h5>Equalizer 2</h5>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 lightbox">
+                                <a href="#x"><img src="img/readyplayer.jpg" alt="Image" class="img-responsive"></a>
+                                <div class="carousel-caption box d-md-block">
+                                    <h5>Ready Player One</h5>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 lightbox">
+                                <a href="#x"><img src="img/granshowman.jpg" alt="Image" class="img-responsive"></a>
+                                <div class="carousel-caption box d-md-block">
+                                    <h5>El Gran Showman</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-lightbox">
+                        <div class="row">
+                            <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
+                            </div>>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-lightbox">
+                        <div class="row">
+                            <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-2 lightbox"><a href="#x"><img src="img/xmendark.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
+
+
     </div>
-
-
-
 
 </div>
 

@@ -2,134 +2,136 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-
-    <link rel="stylesheet" href="../pages/portada.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://localhost:63342/MovieProject/pages/portada.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Proyecto web peliculas">
     <meta name="keywords" content="peliculas, estrenos, sinopsis, trailer">
 </head>
 
-<body id="wrapper">
+<body>
 
+<div class="row-fluid">
 
-<header id="main_header">
-        <a href="\MovieProject\index.html" target="_blank"> <img
-                src="http://localhost:63342/MovieProject/img/logo1.png"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="http://localhost:63342/MovieProject/img/logo1.png" class="img-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <nav id="main_menu">
-            <ul>
-                <li><a href="\MovieProject\index.html">Home</a></li>
-                <li>Estrenos</li>
-                <li>Mas vistas</li>
-                <li>Mejores valoradas</li>
-                <li><a href="\MovieProject\News\News.html">Noticias</li>
-            </ul>
-        </nav>
-    </header>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://localhost:63342/MovieProject/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="News/News.html">Noticias</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Login</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-<section id="content">
-    <aside id="main_aside">
+</div>
 
-        <div class="search-container">
-            <form action="/MovieProject/search.html">
-                <input type="text" placeholder="Busca tu pelicula..." name="search">
-                <button type="submit"><i class="fa fa-search"><img src="/MovieProject/img/search.png"> </i></button>
-            </form>
+<div class="row-fluid">
+
+    <div class="container-fluid">
+
+        <img src="http://localhost:63342/MovieProject/img/carousel/venom1.jpg" class="img-responsive">
+
+    </div>
+    <div class="container">
+        <h1>Venom</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Cartel</h2>
+                <img src="http://localhost:63342/MovieProject/pages/venom2.jpg" class="img-cartel">
+            </div>
+            <div class="col-md-8">
+                <h2>Ficha</h2>
+                <h6>- Año: 2018</h6>
+                <h6>- Duracion: 2018</h6>
+                <h6>- Direccion: 2018</h6>
+                <h6>- Pais: 2018</h6>
+                <h6>- Sipnosis: Como periodista, Eddie Brock (Tom Hardy) lleva tiempo intentando desenmascarar al creador de la Fundación Vida, el famoso genio científico Carlton Drake (Riz Ahmed), una obsesión que ha arruinado su carrera y su relación con su novia, Anne (Michelle Williams). Al investigar uno de los experimentos de Drake, el ente alienígena Venom se fusiona con el cuerpo de Eddie, y el reportero adquiere de pronto nuevos e increíbles superpoderes, así como la oportunidad de hacer prácticamente lo que se le antoje. Retorcido, oscuro, impredecible e impulsado por la cólera, Venom obliga a Eddie a luchar por controlar unas habilidades sumamente peligrosas que, al mismo tiempo, también resultan embriagadoras y le hacen sentir poderoso. Dado que Eddie y Venom se necesitan mutuamente para conseguir lo que quieren, se van entremezclando cada vez más... ¿Dónde acaba Eddie y empieza Venom?</h6>
+            </div>
         </div>
 
 
-        <h1 class="ratin">Rating</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Trailer</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                </div>
 
-        <div class="rating">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="col-md-4">
+                <h2>Cast</h2>
+
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="http://localhost:63342/MovieProject/pages/Hardy.jpg" alt="First slide">
+                            <div class="carousel-caption d-md-block">
+                                <h5>Tom Hardy</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="http://localhost:63342/MovieProject/News/imgs/willy.jpg" alt="Second slide">
+                            <div class="carousel-caption d-md-block">
+                                <h5>La nueva película de Willy Wonka será una precuela</h5>
+                                <p>Paul King ('Paddington') dirigirá la próxima historia sobre el protagonista de 'Charlie y la fábrica de chocolate'</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="http://localhost:63342/MovieProject/News/imgs/jurasic.jpg" alt="Third slide">
+                            <div class="carousel-caption d-md-block">
+                                <h5>El niño de 'Jurassic Park' explica uno de los mayores errores de la película</h5>
+                                <p>El actor Joseph Mazzello interpreta al bajista de Queen John Deacon en el 'biopic' musical 'Bohemian Rhapsody'</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
         </div>
-
-
-</body>
-
-    </aside>
-
-
-    <section id="main_section">
-
-        <h3>DeadPool 2</h3>
-        <article>
-            <h1>Deadpool 2</h1>
-
-            <figure>
-                <img src="https://media.services.cinergy.ch/media/box1600/ca93e72443de5c0a69c1c45fafabef2a56d57aca.jpg">
-
-                <figcaption>
-                    Foul-mouthed mutant mercenary Wade Wilson (AKA. Deadpool), brings together a team of fellow mutant
-                    rogues to protect a young boy with supernatural abilities from the brutal, time-traveling cyborg,
-                    Cable.
-                    <p>- Director: David Leitch</p>
-                    <p>- Writers: Rhett Reese, Paul Wernick | 1 more credit »</p>
-
-                    <p>- Gender: Comedy | Action</p>
-                    <p>- Cast: Ryan Reynolds ... Wade Wilson / Deadpool / Voice of Juggernaut
-                        Josh Brolin Josh Brolin ... Cable
-                        Morena Baccarin Morena Baccarin ... Vanessa
-                        Julian Dennison Julian Dennison
-                    </p>
-                    <a id ="cast" class="links">Ver todo el reparto</a>
-                    <script>
-                        //Variable que almacena el método window.open()
-                        var miVentana;
-
-                        //La función window_open crea el pop-up o ventana emergente
-                        function window_open(){
-                            miVentana = window.open( "repartoDP.html", "nombrePop-Up", "width=700,height=500, top=85,left=50");
-                        }
-
-                        //La función window_close cerrara el pop-up o ventana emergente
-                        function window_close(){
-                            miVentana.close();
-                        }
-
-                        // Llamo a la función window_open en el evento click del botón con id = "botonWindowOpen"
-                        document.getElementById("cast").onclick = function() {window_open()};
-
-                        // Llamo a la función window_close en el evento click del botón con id = "botonWindowClose"
-
-                    </script>
-                </figcaption>
-            </figure>
-        </article>
-
-        <article class="ratingg">
-
-            <figure>
-                <figcaption>
-                    <a href="\MovieProject\pages\Rating.html"> Puntúa esta película</a>
-                </figcaption>
-            </figure>
-        </article>
-
-        <article class="trailer">
-            <h1>Trailer</h1>
-            <figure>
-                <figcaption>
-                    <iframe class="i"
-                            src="https://www.youtube.com/embed/7evoYlgMmoY?rel=0&amp;controls=0&amp;showinfo=0"
-                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </figcaption>
-            </figure>
-        </article>
-
-
-        <article>
-            <h1>Sección de Comentarios</h1>
-            <figure>
-                <textarea class ="comments" rows="3" cols="95" name="comment"> Escribe tu comentario...</textarea>
-                <input type="button" onclick="alert('Comentario enviado')" value="Enviar">
-            </figure>
-        </article>
-    </section>
-</section>
-    <footer id="main_footer">
-        Copyright &copy; MovieDAW 2018
-    </footer>
-
-</body>
-</html>
+    </div>
+</div>
