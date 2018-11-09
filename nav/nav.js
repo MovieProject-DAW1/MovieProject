@@ -1,3 +1,7 @@
+
+
+/************************** LOGIN *************************************/
+
 function loginValidation() {
     var password = document.forms["sign-nav"]["password"].value;
     var email = document.forms["sign-nav"]["email"].value;
@@ -8,6 +12,7 @@ function loginValidation() {
 
     http.open('GET', URL, true);
     http.send();
+
 
     http.onreadystatechange = function () {
 
@@ -24,6 +29,14 @@ function loginValidation() {
 
         }
 
+        /* datos from LOCALSTORE */
+        if (localStorage.getItem(email)){
+            var user_localstore =  JSON.parse(localStorage.getItem(email));
+            if (password === user_localstore.password) show_alert( 'alert-success' , 'Bienvenido a Moview DAW' );
+            else show_alert( 'alert-danger' , 'ERROR: contraseña incorrecta' );
+            return false;
+
+        }
         show_alert( 'alert-warning' , 'Warning: Este usuario no está registrado' );
 
     };
@@ -32,7 +45,7 @@ function loginValidation() {
 function show_alert(add_class, str) {
 
     /* destroy alert if exist */
-    var NodeChild = document.getElementById('alert-nav');
+    var NodeChild = document.getElementById('alert-login');
     if ( NodeChild != null ) NodeChild.parentNode.removeChild(NodeChild);
 
     build_alert();
@@ -55,6 +68,9 @@ function build_alert() {
 
     document.getElementById( 'content-alert-login' ).appendChild( elem_div );
 }
+
+
+/************************** NAVEGATION *************************************/
 function fuction_noFound() {
     window.alert("Lo sentimos, esta función aun no está implementada");
 }
@@ -86,5 +102,45 @@ function checkCookie() {
     }
 }
 
+
+
+/************************** EVENTOS  *************************************/
+
+
+var link = {
+    index : 'http://localhost:63342/MovieProject/index/index.html',
+    news : 'http://localhost:63342/MovieProject/News/News1.html',
+    signin : 'http://localhost:63342/MovieProject/sign-in/sign-in.html'
+};
+
+function clearClassActive(id) {
+    $( "#link-index" ).removeClass( 'active' );
+    $( "#link-news" ).removeClass( 'active' );
+    $( "#link-login" ).removeClass( 'active' );
+    $( id ).addClass( 'active' );
+}
+
+$( document ).ready( function () {
+    clearClassActive( document.getElementById( 'link-index' ) );
+    $( "#content-body" ).load( link.index );
+
+
+    $( "#link-index" ).click(function () {
+
+        $( "#content-body" ).load( link.index );
+        clearClassActive( document.getElementById( 'link-index' ) );
+    });
+
+    $( "#link-news" ).click(function () {
+        $( "#content-body" ).load( link.news );
+        clearClassActive( document.getElementById( 'link-news' ) );
+    });
+    $( "#link-sign-up" ).click(function () {
+        $( "#content-body" ).load( link.signin );
+        $( '#open-login' ).modal( 'hide' );
+        clearClassActive( document.getElementById( 'link-login' ) );
+    });
+
+});
 
 
