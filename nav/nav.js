@@ -110,7 +110,8 @@ function checkCookie() {
 var link = {
     index : 'http://localhost:63342/MovieProject/index/index.html',
     news : 'http://localhost:63342/MovieProject/News/News1.html',
-    signin : 'http://localhost:63342/MovieProject/sign-in/sign-in.html'
+    signin : 'http://localhost:63342/MovieProject/sign-in/sign-in.html',
+    footer : 'http://localhost:63342/MovieProject/footer/footer.html'
 };
 
 function clearClassActive(id) {
@@ -123,6 +124,7 @@ function clearClassActive(id) {
 $( document ).ready( function () {
     clearClassActive( document.getElementById( 'link-index' ) );
     $( "#content-body" ).load( link.index );
+    $( "#content-footer" ).load( link.footer );
 
 
     $( "#link-index" ).click(function () {
