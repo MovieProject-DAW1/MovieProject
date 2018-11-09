@@ -3,7 +3,6 @@ function loginValidation() {
     var email = document.forms["sign-nav"]["email"].value;
 
 
-
     var http = new XMLHttpRequest();
     var URL = 'http://localhost:63342/MovieProject/data/user.json';
 
@@ -18,48 +17,44 @@ function loginValidation() {
         for (i = 0; i < json_data.length; i++) {
 
             if (json_data[i].email === email ) {
-                if (password === json_data[i].password) show_alert('alert-success',"Bienvenido a Moview DAW");
-                else show_alert('alert-danger',"ERROR: contraseña incorrecta");
+                if (password === json_data[i].password) show_alert( 'alert-success' , 'Bienvenido a Moview DAW' );
+                else show_alert( 'alert-danger' , 'ERROR: contraseña incorrecta' );
                 return false;
             }
 
         }
 
-        show_alert('alert-warning',"Warning: Este usuario no está registrado");
+        show_alert( 'alert-warning' , 'Warning: Este usuario no está registrado' );
 
     };
     return false;
 }
 function show_alert(add_class, str) {
 
-
-    var element_alert = document.getElementById('alert-login');
-    var element = document.createElement('p');
-    element.setAttribute("id","message-alert");
-
-    var NodeChild = document.getElementById('message-alert');
+    /* destroy alert if exist */
+    var NodeChild = document.getElementById('alert-nav');
     if ( NodeChild != null ) NodeChild.parentNode.removeChild(NodeChild);
 
-    /*Clean if contain class*/
-    $("#alert-login").removeClass('alert-danger');
-    $("#alert-login").removeClass('alert-success');
-    $("#alert-login").removeClass('alert-warning');
+    build_alert();
 
-    /* add new class and nodo */
-    $("#alert-login").addClass(add_class);
-    element.appendChild(document.createTextNode(str));
-    element_alert.appendChild(element);
-
-
-
-    /*hide modal of the login and show alert */
-    $('#open-login').modal('hide');
-    $('.alert').addClass('show');
-
+    var id_text_alert = document.getElementById( 'message-alert' );
+    $( "#alert-login" ).addClass(add_class);
+    id_text_alert.appendChild(document.createTextNode(str));
+    $( '#open-login' ).modal( 'hide' );
 }
+function build_alert() {
+    var elem_div = document.createElement( 'div' );
+    elem_div.setAttribute( 'id' , 'alert-login' );
+    elem_div.setAttribute( 'class' , 'alert show' );
+    elem_div.setAttribute( 'role' , 'alert' );
 
+    elem_div.innerHTML ='<button type="button" class="close" data-dismiss="alert" aria-label="Close">\n' +
+        '    <span aria-hidden="true">&times;</span>\n' +
+        '</button>\n' +
+        '<p id="message-alert"></p>';
 
-
+    document.getElementById( 'content-alert-login' ).appendChild( elem_div );
+}
 function fuction_noFound() {
     window.alert("Lo sentimos, esta función aun no está implementada");
 }
@@ -90,5 +85,6 @@ function checkCookie() {
         alert("Bienvenido " + user);
     }
 }
+
 
 
