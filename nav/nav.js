@@ -180,7 +180,7 @@ function buildNavegation() {
 
     if (user == '') {
         navHTML += '<li class="nav-item ">\n' +
-            '           <a id="link-login" class="nav-link" href="#open-login" data-toggle="modal">Entrar</a>\n' +
+            '           <a id="link-login" class="nav-link" href="#open-login" data-toggle="modal">Iniciar sesión </a>\n' +
             '       </li>';
         navHTML += '</ul>';
     } else {
@@ -197,6 +197,7 @@ function buildNavegation() {
             '          <a id="link-logout" class="dropdown-item" href="#">Salir</a>\n' +
             '        </div>\n' +
             '      </li>';
+
         navHTML += '</ul>';
     }
 
