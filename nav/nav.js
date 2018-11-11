@@ -116,7 +116,6 @@ var link = {
     signin : 'http://localhost:63342/MovieProject/sign-in/sign-in.html',
     footer : 'http://localhost:63342/MovieProject/footer/footer.html'
 };
-
 var buttonNavegation = [
     {
         name : "Home",
