@@ -125,6 +125,7 @@ var buttonNavegation = [
         name : "Noticias",
         id : "link-news"
     }
+
 ];
 
 function buttonNavAction() {
