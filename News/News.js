@@ -5,13 +5,18 @@ var News = [
         id : "link-inde",
         image : "http://localhost:63342/MovieProject/News/imgs/walking.jpg",
         date : "05/11/2018",
-        description: "La novena temporada de la ficción zombi introducirá gran cantidad de fichajes en su próximo episodio"
+        description: "La novena temporada de la ficción zombi introducirá gran cantidad de fichajes en su próximo episodio",
+        link : "http://localhost:63342/MovieProject/News/News1.html"
     },
     {
-        name : "Homee",
-        id : "link-index",
-        link : "https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350"
+        name : "La nueva película de Willy Wonka será una precuela",
+        id : "link-inde",
+        image : "http://localhost:63342/MovieProject/News/imgs/willy.jpg",
+        date : "02/11/2018",
+        description: "Paul King ('Paddington') dirigirá la próxima historia sobre el protagonista de 'Charlie y la fábrica de chocolate'"
     },
+
+
 ];
 
 
@@ -19,8 +24,17 @@ $( document ).ready(function(){
    var contentHTML ='';
     for (var i = 0; i < News.length; i++){
         contentHTML += '<div class="row shadow p-3 mb-5 bg-white rounded">\n' +
-            '           <img  src="' + News[i].image  +'"</img> '+
-                        '<h1>\n' + News[i].name + '</h1>' + '</div>';
+
+                            '<div class="col-md-4">\n' +
+                            '<a class="link" href="http://localhost:63342/MovieProject/News/News1.html">\n' +
+                                '<img class="d-block w-100" src="' + News[i].image  +'"</img> '+
+                            '</div>' +
+                            '<div class="col-md-8">\n' +
+                                '<p>\n' + News[i].date + '</p>' +
+                                '<h2>\n' + News[i].name + '</h2>' +
+                                '<p>\n' + News[i].description + '</p>' +
+                            '</div>' +
+                        '</div>';
         //contentHTML += '<div class="row shadow p-3 mb-5 bg-white rounded">\n' '<h1>\n' + News[i].name + '</h1>' + '</div>';
     }
 
