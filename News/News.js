@@ -16,6 +16,16 @@ var News = [
         description: "Paul King ('Paddington') dirigirá la próxima historia sobre el protagonista de 'Charlie y la fábrica de chocolate'"
     },
 
+    {
+        name : "El niño de 'Jurassic Park' explica uno de los mayores errores de la película",
+        id : "link-inde",
+        image : "http://localhost:63342/MovieProject/News/imgs/jurasic.jpg",
+        date : "02/11/2018",
+        description: "El actor Joseph Mazzello interpreta al bajista de Queen John Deacon en el 'biopic' musical 'Bohemian Rhapsody'"
+    },
+
+
+
 
 ];
 
@@ -44,4 +54,22 @@ $( document ).ready(function(){
 
 });
 
+$( document ).ready(function(){
+    var contentHTML ='';
+    for (var i = 0; i < News.length; i++){
+        contentHTML += '<div class="carousel-item active">\n' +
+            '<img class="d-block w-100" src="' + News[i].image  +'" alt="First slide" </img> '+
+            '<div class="carousel-caption d-md-block">\n' +
+                '<h5>\n' + News[i].name + '</h5>' +
+                '<p>\n' + News[i].description + '</p>' +
+            '</div>' +
+            '</div>';
+        //contentHTML += '<div class="row shadow p-3 mb-5 bg-white rounded">\n' '<h1>\n' + News[i].name + '</h1>' + '</div>';
+    }
+
+
+    console.log(document.getElementById( 'content-news' ));
+    document.getElementById( 'content-news' ).innerHTML = contentHTML;
+
+});
 
