@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 1.2%;
+}
+
 .img-box {
     max-height: 300px;
 }
@@ -20,7 +29,6 @@
 
 }
 
-
 .article img {
     width: 60%;
     height: 20%;
@@ -31,8 +39,16 @@
     box-shadow: 2px 2px 5px #999;
 }
 
+.cabecera {
+    max-height: 300px;
+}
 
-
+.banner {
+    height: auto;
+    max-height: 200px;
+    padding: 2%;
+    margin: 0 0;
+}
 
 .carousel-inner {
     position: relative;
@@ -40,15 +56,10 @@
     overflow: hidden;
 }
 
-.maxheight1 {
-    height: 100%;
-    max-height: 150px;
-}
-
 .carousel-item {
     top: -30px;
     min-height: 400px;
-    max-height: 200px;
+    max-height: 400px;
 }
 
 .carousel-lightbox {
@@ -70,7 +81,7 @@
 
 }
 
-.box{
+.box {
     background-color: rgba(18, 18, 18, 0.55);
     width: 95%;
     position: absolute;
@@ -81,16 +92,15 @@
 }
 
 .carousel-control {
-    padding-top:10%;
-    width:5%;
+    padding-top: 10%;
+    width: 5%;
 }
 
 #myCarousel {
     width: 100%;
-    max-height: 250px;
     padding-left: 1%;
+    max-height: 250px;
 }
-
 
 .lightbox {
     width: 100%;
@@ -100,7 +110,7 @@
     margin: 3px;
 }
 
-.lightbox img{
+.lightbox img {
     width: 100%;
     height: auto;
     min-width: 160px;
@@ -116,13 +126,17 @@
     border-top: 2px solid #999999;
 }
 
-
-.img-cartel{
-    width: 100%;
-    height: 30%;
+a {
+    text-decoration: none;
+    color: black;
 }
 
-.button{
-    background:darkred;
-    color:red;
+a:hover {
+    text-decoration: none;
+}
+
+.foto {
+    height: auto;
+    min-height: 200px;
+    margin-left: 1%;
 }
