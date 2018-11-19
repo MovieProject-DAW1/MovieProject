@@ -112,9 +112,9 @@ function getCookie(cname) {
 
 var link = {
     index : 'http://localhost:63342/MovieProject/index/index.html',
-    news : 'http://localhost:63342/MovieProject/News/News1.html',
+    news : 'http://localhost:63342/MovieProject/News/news.html',
     signin : 'http://localhost:63342/MovieProject/sign-in/sign-in.html',
-    footer : 'http://localhost:63342/MovieProject/footer/footer.html'
+    footer : 'http://localhost:63342/MovieProject/footer/footer.html',
 };
 var buttonNavegation = [
     {
@@ -136,9 +136,13 @@ function buttonNavAction() {
     });
 
     $( "#link-news" ).click(function () {
+
         $( "#content-body" ).load( link.news );
         clearClassActive( document.getElementById( 'link-news' ) );
+
     });
+
+
     $( "#link-sign-up" ).click(function () {
         $( "#content-body" ).load( link.signin );
         $( '#open-login' ).modal( 'hide' );
@@ -150,6 +154,7 @@ function buttonNavAction() {
         buildNavegation();
         showAlert( 'alert-success' , 'Ha salido satisfactoriamente, ¡hasta pronto!' );
     });
+
 
 
 }
@@ -223,5 +228,4 @@ $( document ).ready( function () {
     loadDefault();
 
 });
-
 
