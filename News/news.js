@@ -10,26 +10,29 @@ var All = [
     {
         name : "'The Walking Dead': estos son los nuevos personajes a los que debes prestar atención",
         id : "link-walking",
-        image : 'http://localhost:63342/MovieProject/News/imgs/walking.jpg',
+        image : 'https://wallpapercave.com/wp/wp2241458.jpg',
         date : "05/11/2018",
         description: "La novena temporada de la ficción zombi introducirá gran cantidad de fichajes en su próximo episodio",
     },
     {
         name : "'The Walking Dead': estos son los nuevos personajes a los que debes prestar atención",
         id : "link-walking2",
-        image : 'http://localhost:63342/MovieProject/News/imgs/walking.jpg',
+        image : 'https://wallpapercave.com/wp/wp2241458.jpg',
         date : "05/11/2018",
         description: "La novena temporada de la ficción zombi introducirá gran cantidad de fichajes en su próximo episodio",
     },
     {
         name : "'The Walking Dead': estos son los nuevos personajes a los que debes prestar atención",
         id : "link-walking3",
-        image : 'http://localhost:63342/MovieProject/News/imgs/walking.jpg',
+        image : 'https://wallpapercave.com/wp/wp2241458.jpg',
         date : "05/11/2018",
         description: "La novena temporada de la ficción zombi introducirá gran cantidad de fichajes en su próximo episodio",
     },
 
+
 ];
+
+
 
 function loadButtonNews() {
 

@@ -7,13 +7,13 @@ var All = [
     {
         name: "'The Walking Dead': nuevos personajes",
         id: "link-walking",
-        image: 'http://localhost:63342/MovieProject/News/imgs/walking.jpg',
+        image: 'https://wallpapercave.com/wp/wp2241458.jpg',
         date: "05/11/2018",
     },
     {
         name: "'The Walking Dead': nuevos personajes",
         id: "link-walking2",
-        image: 'http://localhost:63342/MovieProject/News/imgs/walking.jpg',
+        image: 'https://wallpapercave.com/wp/wp2241458.jpg',
         date: "05/11/2018",
     },
 
@@ -28,6 +28,7 @@ function loadButtonNews() {
     $("#link-walking").click(function () {
         $("#content-noticias").load(linkNews.newWalking);
     });
+
 }
 
 function buildAllNews() {
