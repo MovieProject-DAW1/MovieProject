@@ -132,18 +132,80 @@ function buildAllNews() {
                         '</div>' +
                     '</div>' +
                 '</div>' +
-                                '<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">\n' +
-                                '            <span class="carousel-control-prev-icon" aria-hidden="true"></span>\n' +
-                                '            <span class="sr-only">Previous</span>\n' +
-                                '        </a>'+
-                                '<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">\n' +
-                                '            <span class="carousel-control-next-icon" aria-hidden="true"></span>\n' +
-                                '            <span class="sr-only">Next</span>\n' +
-                                '        </a>'+
+
             '</div>'+
         '</div>';
 
+    document.getElementById( 'content-newsss' ).innerHTML = contentHTML;
+}
 
+function buildAllNews() {
+    var contentHTML ='<div id="myCarousel3" class="carousel slide" data-ride="carousel">\n' +
+        '\n' +
+        '                <div class="carousel-inner maxheight1">\n' +
+        '                    <div class="carousel-item carousel-lightbox active">\n' +
+        '                        <div class="row">';
+    for (var i = 0; i < 4; i++){
+        contentHTML += '<div class="col-sm-2 lightbox">\n' +
+            '                                <a href="#x"><img src="https://wallpapercave.com/wp/wp2241458.jpg" alt="Image" class="img-responsive"></a>\n' +
+            '                                <div class="carousel-caption box d-md-block">\n' +
+            '                                    <h5>Walking Dead</h5>\n' +
+            '                                </div>\n' +
+            '                            </div>';
+    }
+    // Cierro los divs
+    contentHTML+='</div>'+
+    '</div>' +
+     '                    <div class="carousel-item carousel-lightbox">\n' +
+     '                        <div class="row">';
+    for (var i = 0; i < 4; i++){
+        contentHTML += '<div class="col-sm-2 lightbox">\n' +
+            '                                <a href="#x"><img src="https://wallpapercave.com/wp/wp2241458.jpg" alt="Image" class="img-responsive"></a>\n' +
+            '                                <div class="carousel-caption box d-md-block">\n' +
+            '                                    <h5>Walking Dead</h5>\n' +
+            '                                </div>\n' +
+            '                            </div>';
+    }
+    contentHTML+='</div>' +
+    '</div>' +
+    '</div>' +
+    '</div>';
+
+
+    document.getElementById( 'content-newssss' ).innerHTML = contentHTML;
+}
+
+function buildAllNews() {
+    var contentHTML ='<div id="myCarousel3" class="carousel slide" data-ride="carousel">\n' +
+        '\n' +
+        '                <div class="carousel-inner maxheight1">\n' +
+        '                    <div class="carousel-item carousel-lightbox active">\n' +
+        '                        <div class="row">';
+    for (var i = 0; i < 2; i++){
+        contentHTML += '<div class="col-sm-2 lightbox">\n' +
+            '                                <a href="#x"><img src="https://wallpapercave.com/wp/wp2241458.jpg" alt="Image" class="img-responsive"></a>\n' +
+            '                                <div class="carousel-caption box d-md-block">\n' +
+            '                                    <h5>Walking Dead</h5>\n' +
+            '                                </div>\n' +
+            '                            </div>';
+    }
+    // Cierro los divs
+    contentHTML+='</div>'+
+        '</div>' +
+        '                    <div class="carousel-item carousel-lightbox">\n' +
+        '                        <div class="row">';
+    for (var i = 0; i < 2; i++){
+        contentHTML += '<div class="col-sm-2 lightbox">\n' +
+            '                                <a href="#x"><img src="https://wallpapercave.com/wp/wp2241458.jpg" alt="Image" class="img-responsive"></a>\n' +
+            '                                <div class="carousel-caption box d-md-block">\n' +
+            '                                    <h5>Walking Dead</h5>\n' +
+            '                                </div>\n' +
+            '                            </div>';
+    }
+    contentHTML+='</div>' +
+        '</div>' +
+        '</div>' +
+        '</div>';
 
 
     document.getElementById( 'content-news' ).innerHTML = contentHTML;
